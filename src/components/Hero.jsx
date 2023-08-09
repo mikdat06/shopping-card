@@ -1,0 +1,29 @@
+import React from "react";
+
+
+import { Link } from "react-router-dom";
+
+const Hero = () => {
+  return (
+    <section className="bg-blue-200 h-[650px]  bg-no-repeat bg-cover py-24 w-full">
+      <div className="container mx-auto flex justify-around h-full">
+        <div className="flex flex-col justify-center ">
+          <h1 className="md:text-[70px] sm:text-[60px]  min-[320px]:text-[30px] leading-[1.1] sm:leading-normal font-light mb-4">
+            Shop with us, Discover Amazing Products! <br />
+            <span className="font-semibold">MEA Products</span>
+          </h1>
+          <Link
+            to={"/"}
+            className="self-start uppercase font-semibold border-b-2  border-b-primary "
+          >
+            Discover More
+          </Link>
+        </div>
+        <div className=" hidden lg:flex  w-72">
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
